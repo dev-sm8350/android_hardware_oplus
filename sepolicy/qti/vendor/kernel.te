@@ -1,4 +1,6 @@
 # Ignore the socket if it fails to create
 dontaudit kernel self:capability dac_read_search;
 
+dontaudit kernel mnt_vendor_file:dir search;
+
 allow kernel vendor_file:file r_file_perms;
